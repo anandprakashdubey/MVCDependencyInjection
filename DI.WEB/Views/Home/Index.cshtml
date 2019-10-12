@@ -1,0 +1,15 @@
+﻿@model IEnumerable<DI.WEB.Models.Restaurant>
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    Test  @Enumerable.Count(Model)
+</div>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item.Name</li>
+
+    }
+</ul>
+
